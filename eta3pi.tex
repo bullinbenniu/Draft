@@ -183,6 +183,11 @@ $\jpsi\ra\omega\pio\pio$.
 $\chisq(\gamma\pio\pio\pio) < \chisq(\gamma\eta\pio\pio)$, $|m_{\gamma\gamma} - m_{\eta}| > 0.03$ GeV/$c^{2}$ 
 are used to remove as many as possible of peaking background events from $\eta'\ra\eta\gamma\gamma$.
 
+The backgrounds in the selected event sample from a number of potential background channels list in PDG
+are studied with MC simulations. The background level is very low in the $\eta'$ mass region for decay
+$\jpsi\ra\gamma\eta\ra\gamma\pi^{+(0)}\pi^{-(0)}\pio$. The main backgrounds are from $\jpsi\ra\gamma\etap\to
+\gamma\eta\pio\pio$ for decay $\jpsi\ra\gamma\etap\ra\gamma\pio\pio\pio$.
+
 \section{DALITZ PLOT PARAMETRIZATION}
 The internal dynamics of decay $\eta \to \pip\pim\pio$ can be
 described by two degrees of freedom which can be chosen as:
@@ -192,7 +197,7 @@ described by two degrees of freedom which can be chosen as:
 \end{equation}
 where $T_{\pi}$ denote the kinetic energies of mesons in the $\eta$
 rest frame and $Q = T_{\eta} + T_{\pip} + T_{\pim} = m_{\eta} -m_{\pip} - m_{\pim} - m_{\pio}$. For the charged channel, the Dalitz plot parametrization reads
-    \begin{equation}
+\begin{equation}\label{eq:etacha_amp}
         |A(X,Y)|^{2} = N(1 + aY + bY^2 + cX + dX^2 + eXY + fY^{3} + \ldots)
     \end{equation}
 where real parameters a,b,c,d,e and f are called Dalitz parameters and N is the normalized factor. The non-zero odd power terms of X (c and e) imply the charge-parity violation.
@@ -203,7 +208,7 @@ is chosen convention to be:
     Z = X^2 + Y^2 = \frac{2}{3}\sum^{3}_{i=1}(\frac{3T_{i}}{Q} - 1)^{2}
 \end{equation}
 Then parametrization of Dalitz plot reads
-\begin{equation}\label{eqn:amp_eta_neu}
+\begin{equation}\label{eq:etaneu_amp}
     |A(Z)|^2 = N(1 + 2\alpha Z)
 \end{equation}
 where $\alpha$ is the slope parameter of the Dalitz plot, N is the normalized factor.
@@ -237,11 +242,66 @@ region are $\sigma_{X} = 0.0236$ and $\sigma_{Y} = 0.0212$ according to MC simul
         \end{overpic}
     \end{center}
     \caption{\label{fig:etacha_dalXY_datamc}(a) The experimental form of the Dalitz diagram
-        for the decay $\eta\ra\pip\pim\pio$ in the $\eta$ mass region. The corresponding 
+        for the decay $\eta\ra\pip\pim\pio$. The corresponding 
     projections on variable X and Y are shown in (b) and (c), where the black dots represent
     data and histograms represent MC simulation.}
 \end{figure}
 
+In order to describe the event density distribution on X and Y, we use a probability
+density function(p.d.f.) p(X,Y) as follows:
+\begin{eqnarray}
+	p(X,Y) & = & \left\lbrace \begin{array}{ll}
+	\frac{\varepsilon(X,Y)}{\int{\varepsilon(X,Y)dXdY}} & \textit{ efficiency for PHSP MC}  \\
+	\frac{|A(X,Y)|^{2}\varepsilon(X,Y)}{\int{|A(X,Y)|^{2}\varepsilon(X,Y)dXdY}} & \textit{for data and efficiency for Dalitz MC}
+	\end{array}\right.
+\end{eqnarray}
+where the $\epsilon$ represents the efficiency and $|A(X,Y)|^{2}$ is described as
+Eq.~\ref{etacha_amp}. 
+The detection efficiency as a function of X and Y variables $\varepsilon(X,Y)$ is defined as the ratio 
+between the number of selected and generated events. The Monte Carlo samples are generated according to 
+KLOE's results on the analysis of $\eta \to \pip\pim\pio$. 
+and second-order polynomial functions are used to parametrize the efficiency.
+Dalitz plot parameters are obtained by minimization of the
+log-Likelihood function calculated as:
+\begin{equation}
+	-ln {\cal L}(X,Y) = -\sum_{i=1}^{N_{data}}ln{}{p_{i}(X,Y)}
+\end{equation}
+
+To evaluate goodness of our fit, a $\chisq$ variable can be calculated as:
+\begin{eqnarray}
+     \chisq & = & \sum_{i=1}^{N_{bins}}\frac{(n^{rec}_{i}-n^{fit}_{i})^{2}}{n^{fit}_{i}}
+\end{eqnarray}
+where $N_{bins}$ is the number of the bins, $n_{i}^{rec}$ is the number of events observed
+in the $i^{th}$ bin, and $n_{i}^{fit}$ is the number predicted from the fitted p.d.f.:
+The $\chisq$ follows $\chi^{2}$ distribution whose freedom is ($N_{bins}$-L-1), where L is the number of free parameters in p.d.f.
+
+
+Fitting to data gives the following values of the parameters:
+\begin{table}[!htbp]
+ \begin{center}
+ \begin{small}
+ \begin{tabular}{ccccccc}\hline\hline
+  	$\chisq/NDF$ & a 	&  b  &  $10^{2}$c  & 	d	&	e	& f	 \\\hline
+  	1400/1153 &$ -1.128\pm0.016 $&$ 0.154\pm0.017 $&$ 0.058\pm0.850 $&$ 0.085\pm0.016 $&$ 0.017\pm0.019 $&$ 0.173\pm0.031$\\
+\hline\hline
+\end{tabular}
+\end{small}
+\end{center}
+\end{table}
+\begin{small}
+\begin{eqnarray}
+	\left(\begin{array}{cccccc}
+ 	1.000 & -0.242  & -0.004 & -0.407 &  0.003 & -0.772 \\
+ 	   	  &  1.000  & -0.001 &  0.324 &  0.013 & -0.309 \\
+	   	  & 	    &  1.000 &  0.002 & -0.591 &  0.005 \\
+	   	  &  	    &  		 &  1.000 &  0.013 &  0.104 \\
+ 	   	  & 	    & 	     &  	  &  1.000 & -0.008 \\
+	   	  & 	    &  	     &  	  & 	   &  1.000
+	 \end{array} \right) \nonumber
+\end{eqnarray}
+\end{small}
+The errors are statistical only. The fit procedure has been verified with MC
+by checking the input and output values of the Dalitz plot parameters.
 
 %In order to suppress electronic noise and energy deposition unrelated to physical event,
 %the EMC time $t$ of the photon candidate must be in coincidence with collision events
