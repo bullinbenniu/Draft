@@ -213,7 +213,7 @@ Then parametrization of Dalitz plot reads
 \end{equation}
 where $\alpha$ is the slope parameter of the Dalitz plot, N is the normalized factor.
 
-\section{MEASUMENT OF THE MATRIX ELEMENTS}
+\section{MEASUMENT OF THE MATRIX ELEMENTS FOR DALITZ PLOT OF $\eta\ra\pip\pim\pio$}
 To avoid the problem from mass resolution, we use the information after 6C kinematic fit to calculate the X and Y values
 where the reconstructed momenta of two gammas are constrained to
 the $\pio$ mass and the reconstructed momenta of $\pip\pim\pio$ is constrained to the $\eta$ mass.
@@ -256,7 +256,7 @@ density function(p.d.f.) p(X,Y) as follows:
 	\end{array}\right.
 \end{eqnarray}
 where the $\epsilon$ represents the efficiency and $|A(X,Y)|^{2}$ is described as
-Eq.~\ref{etacha_amp}. 
+Eq.~\ref{eq:etacha_amp}. 
 The detection efficiency as a function of X and Y variables $\varepsilon(X,Y)$ is defined as the ratio 
 between the number of selected and generated events. The Monte Carlo samples are generated according to 
 KLOE's results on the analysis of $\eta \to \pip\pim\pio$. 
@@ -274,7 +274,6 @@ To evaluate goodness of our fit, a $\chisq$ variable can be calculated as:
 where $N_{bins}$ is the number of the bins, $n_{i}^{rec}$ is the number of events observed
 in the $i^{th}$ bin, and $n_{i}^{fit}$ is the number predicted from the fitted p.d.f.:
 The $\chisq$ follows $\chi^{2}$ distribution whose freedom is ($N_{bins}$-L-1), where L is the number of free parameters in p.d.f.
-
 
 Fitting to data gives the following values of the parameters:
 \begin{table}[!htbp]
@@ -303,506 +302,46 @@ Fitting to data gives the following values of the parameters:
 The errors are statistical only. The fit procedure has been verified with MC
 by checking the input and output values of the Dalitz plot parameters.
 
-%In order to suppress electronic noise and energy deposition unrelated to physical event,
-%the EMC time $t$ of the photon candidate must be in coincidence with collision events
-%in the range 0 $\leq$ $t$ $\leq$ 700 ns.
-%
-%A kinematic fitting that utilizes momentum and energy conservation (4C) is applied under
-%hypothesis of $e^{+}e^{-} \to \gamma \gamma \ell^+\ell^-$ to improve mass resolution and reduce potential backgrounds.
-%The chi-square ($\chi^{2}_{4C}$) of kinematic fit is required to be less than $40$.
-%If there are more than two photons in a event, the combination of $\gamma \gamma \ell^{+}\ell^{-}$
-%with least $\chi^{2}_{4C}$ is chosen.
-%To suppress background events from radiative Bhabha and radiative dimuon events associated
-%with a fake photon, the two selected photons are further required to be with energy larger
-%than $0.08$ GeV.
-%
-%After all above requirements are imposed, scatter plots of the invariant mass of $\gamma\gamma$
-%versus that of $\ell^+\ell^-$ for data at $\sqrt{s}$ = 4.230 and 4.260 GeV are shown in Fig.~\ref{scatter}.
-%Clear accumulations of events are observed around the intersection of the $\eta$ and $J/\psi$ regions,
-%which indicate $e^+e^-\to\eta J/\psi$ signals.
-%There are no significant signals observed around the intersection of $\pi^0$ and $J/\psi$ regions.
-%The corresponding invariant mass distributions of $\ell^+\ell^-$ are shown in Fig.~\ref{Mll}.
-%MC studies show that dominant backgrounds are from radiative Bhabha and dimuon events,
-%and are expected to be flat distributions around $J/\psi$ signal region.
-%The high level background is observed in the $e^{+}e^{-}$ mode due to the much larger Bhabha background.
-%The candidate event of $e^+e^-\to\eta J/\psi$ is required to be within $J/\psi$ signal region,
-%defined as $3.067<M(\ell^{+}\ell^{-})<3.127$ GeV/$c^{2}$.
-%A $J/\psi$ sideband region, $2.932<M(\ell^{+}\ell^{-})<3.052$ GeV/$c^{2}$
-%and $3.142<M(\ell^{+}\ell^{-})<$ $3.262$ GeV/$c^{2}$,
-%which is four times of the size of the signal region, is used to estimate contribution from background events in M($\gamma\gamma$).
-%%%%%%Scatter Plots%%%%%%%%
-%\begin{figure*}[htbp]
-%\begin{center}
-%\begin{overpic}[width=7.0cm,height=5.0cm,angle=0]{graph/hmgg_Jpsi_mumu_4230_2D.eps}
-%\put(25,60){\large\bf (a)}
-%\end{overpic}
-%\begin{overpic}[width=7.0cm,height=5.0cm,angle=0]{graph/hmgg_Jpsi_ee_4230_2D.eps}
-%\put(25,60){\large\bf (b)}
-%\end{overpic}
-%\begin{overpic}[width=7.0cm,height=5.0cm,angle=0]{graph/hmgg_Jpsi_mumu_4260_2D.eps}
-%\put(25,60){\large\bf (c)}
-%\end{overpic}
-%\begin{overpic}[width=7.0cm,height=5.0cm,angle=0]{graph/hmgg_Jpsi_ee_4260_2D.eps}
-%\put(25,60){\large\bf (d)}
-%\end{overpic}
-%\end{center}
-%\caption{Scatter plots of $M(\gamma\gamma)$ versus $M(\ell^{+}\ell^{-})$ at $\sqrt{s}$ = 4.230 (a)(b) and 4.260 GeV (c)(d).
-%The left two plots is for $\mu^{+}\mu^{-}$ mode and right plots for $e^{+}e^{-}$ mode.}\label{scatter}
-%\end{figure*}
-%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%
-%\begin{figure*}[htbp]
-%\begin{center}
-%\begin{overpic}[width=7.0cm,height=5.0cm,angle=0]{graph/4230_Jpsi_mumu.eps}
-%\put(25,60){\large\bf (a)}
-%\end{overpic}
-%\begin{overpic}[width=7.0cm,height=5.0cm,angle=0]{graph/4230_Jpsi_ee.eps}
-%\put(25,60){\large\bf (b)}
-%\end{overpic}
-%\begin{overpic}[width=7.0cm,height=5.0cm,angle=0]{graph/4260_Jpsi_mumu.eps}
-%\put(25,60){\large\bf (c)}
-%\end{overpic}
-%\begin{overpic}[width=7.0cm,height=5.0cm,angle=0]{graph/4260_Jpsi_ee.eps}
-%\put(25,60){\large\bf (d)}
-%\end{overpic}
-%\end{center}
-%\caption{The invariant mass distributions of lepton pairs at $\sqrt{s}$ = 4.230 (a)(b) and 4.260 GeV (c)(d).
-%The left two plots is for $M(\mu^{+}\mu^{-})$ and right plots for $M(e^{+}e^{-})$.}\label{Mll}
-%\end{figure*}
-%%%%%%%%%%%%%
-%
-%With further $J/\psi$ mass window required, the invariant mass distributions of two photons
-%$M(\gamma \gamma)$ are depicted in Fig.~\ref{4230gg} for data at $\sqrt{s}$ = 4.230 and 4.260 GeV,
-%respectively. Clear $\eta$ signals are observed.
-%The corresponding normalized distributions for the events in the $J/\psi$ sideband regions are
-%shown as shadow histogram in plots, too. The backgrounds are well described by $J/\psi$ sideband events.
-%%%%%%%%%%%%%%%%%%%%%
-%\begin{figure*}[htbp]
-%\begin{center}
-%\begin{overpic}[width=7.0cm,height=5.0cm,angle=0]{graph/4230_fit_eta_mumu.eps}
-%\put(25,60){\large\bf (a)}
-%\end{overpic}
-%\begin{overpic}[width=7.0cm,height=5.0cm,angle=0]{graph/4230_fit_eta_ee.eps}
-%\put(25,60){\large\bf (b)}
-%\end{overpic}
-%\begin{overpic}[width=7.0cm,height=5.0cm,angle=0]{graph/4260_fit_eta_mumu.eps}
-%\put(25,60){\large\bf (c)}
-%\end{overpic}
-%\begin{overpic}[width=7.0cm,height=5.0cm,angle=0]{graph/4260_fit_eta_ee.eps}
-%\put(25,60){\large\bf (d)}
-%\end{overpic}
-%\end{center}
-%\caption{The invariant mass distributions of two photons at $\sqrt{s}$ = 4.230 (a)(b)
-%and 4.260 GeV (c)(d). The left two plots are for $J/\psi\to\mu^{+}\mu^{-}$ mode and
-%right two for $J/\psi\to e^{+}e^{-}$ mode.
-%Dots with error bars are data; the red solid curves for the total fitting results;
-%the blue dotted curves for the background from fitting and the shadow histograms
-%for the normalized $J/\psi$ sideband events.}
-%\label{4230gg}
-%\end{figure*}
-%%%%%%%%%%%%%
-%
-%The process of $e^+e^-\to\pi^0 J/\psi$ also is searched for in $J/\psi\to\mu^+\mu^-$ decay
-%mode by checking $M(\gamma \gamma)$ distribution around $\pi^0$ mass region.
-%The searching is not performed with $J/\psi\to e^+e^-$ mode due to suffering from the huge
-%background of radiative Bhabha events.
-%Due to misidentification of $\pi^{\pm}$ to $\mu^{\pm}$, a peaking background from
-%$e^{+}e^{-} \to \pi^{+}\pi^{-}\pi^{0}$ is observed around $\pi^0$ mass region on
-%$M(\gamma \gamma)$ distribution for the events with two charged tracks invariant
-%mass in the $J/\psi$ signal region, as well as in $J/\psi$ sideband region.
-%A further requirement, at least one charged track has a muon counter hit depth larger
-%than 30.0 cm, is applied to remove this background.
-%Fig.~\ref{4230ggPi0} shows $M(\gamma \gamma)$ distributions around the $\pi^0$ mass
-%region for event with two charged tracks invariant mass within the $J/\psi$ signal region
-%at $\sqrt{s}$ = 4.230 and 4.260GeV, respectively.
-%The corresponding plots for the events within the $J/\psi$ sideband regions are shown as
-%shadow histograms after normalization, too. No significant $\pi^{0}$ signal is observed.
-%
-%%%%%%%%%%%%%%%%%%%%%
-%\begin{figure*}[htbp]
-%\begin{center}
-%\begin{overpic}[width=7.0cm,height=5.0cm,angle=0]{graph/4230_fit_pi0_mumu.eps}
-%\put(25,60){\large\bf (a)}
-%\end{overpic}
-%\begin{overpic}[width=7.0cm,height=5.0cm,angle=0]{graph/4260_fit_pi0_mumu.eps}
-%\put(25,60){\large\bf (b)}
-%\end{overpic}
-%\end{center}
-%\caption{The invariant mass distributions of two photons at $\sqrt{s}$ = 4.230 (a) and
-%4.260 GeV (b) in $J/\psi\to\mu^{+}\mu^{-}$ mode.
-%Dots with error bars are data and the shadow histograms
-%are the normalized $J/\psi$ sideband events.}\label{4230ggPi0}
-%\end{figure*}
-%%%%%%%%%%%%%
-%
-%\section{\boldmath M($\gamma \gamma$) mass spectrum fits and cross section results}
-%An unbinned maximum likelihood fit is performed on $M(\gamma\gamma)$ in $J/\psi\to e^{+}e^{-}$
-%and $\mu^{+}\mu^{-}$ modes, respectively.
-%The $\eta$ signal probability density function (PDF) is represented with a signal MC simulated
-%shape convoluted with a Gaussian function, where the Gaussian function describes
-%the resolution difference between data and MC simulation, and its parameters are floating in the fit.
-%The background shape is described by a second-order Chebyshev polynomial function.
-%The corresponding fit results at $\sqrt{s}$ = 4.230 and 4.260 GeV are shown in Fig.~\ref{4230gg},
-%and the fit yields of $\eta$ signal are shown in Table~\ref{ResultsEta}.
-%%%%%%%%%%%%%%%%%%%%
-%\begin{table*}[htbp]
-%  \footnotesize
-%  \centering
-%  \caption{The results on $e^{+}e^{-}\to\eta J/\psi$ at data samples with significant signal. The table shows the c.m energy $\sqrt{s}$, integrated luminosity $\mathcal{L}_{int}$, number of observed $\eta$ events $N^{obs}_{\eta}(\mu^{+}\mu^{-})$/$N^{obs}_{\eta}(e^{+}e^{-})$ from fitting, efficiency $\epsilon_{\mu}/\epsilon_{e}$, radiative correction factor $(1+\delta^{ISR})$, vacuum polarization factor $(1+\delta^{VP})$, Born cross section $\sigma^{B}(\mu^{+}\mu^{-})$/$\sigma^{B}(e^{+}e^{-})$  and Combined Born cross section $\sigma^{B}_{Com}$ (where the first uncertainties are statistical and the second are systematic).}
-%  \begin{tabular}{cccccccccc}
-%  \hline
-%  \hline
-%  $\sqrt{s}$(GeV) &$\mathcal{L}$(pb$^{-1})$ &$N^{obs}_{\eta}(\mu^{+}\mu^{-})$/$N^{obs}_{\eta}(e^{+}e^{-})$ &$\epsilon_{\mu}/\epsilon_{e}(\%)$ &$(1+\delta^{ISR})$ &$(1+\delta^{VP})$ &$\sigma^{B}(\mu^{+}\mu^{-})$(pb) &$\sigma^{B}(e^{+}e^{-})$(pb)  &$\sigma^{B}_{Com}$(pb)\\
-%  $4.190$    &$43.1$    &$17.5\pm4.3$/$10.4\pm3.6$     &$35.6/24.8$      &$0.93$   &$1.056$   &$49.8\pm12.2\pm3.4$     &$42.5\pm14.7\pm2.4$       &$46.8\pm9.4\pm2.4$\\
-%  $4.210$    &$54.6$    &$25.7\pm5.1$/$14.8\pm4.5$     &$31.7/22.0$      &$1.08$   &$1.057$   &$55.8\pm11.1\pm3.7$     &$46.3\pm14.1\pm3.9$       &$52.1\pm8.7\pm3.0$\\
-%  $4.220$    &$54.1$    &$32.6\pm5.8$/$11.4\pm3.9$     &$29.6/20.4$      &$1.15$   &$1.057$   &$71.8\pm12.8\pm3.8$     &$36.5\pm12.5\pm1.7$       &$52.9\pm8.9\pm3.0$\\
-%  $4.230$    &$1091.7$  &$394.3\pm20.9$/$274.9\pm20.1$ &$28.1/19.3$      &$1.18$   &$1.056$   &$44.3\pm2.3\pm1.7$      &$44.9\pm3.3\pm2.1$        &$44.5\pm1.9\pm1.6$\\
-%  $4.245$    &$55.6$    &$9.3\pm3.3$/$9.7\pm3.6$       &$26.1/18.3$      &$1.26$   &$1.056$   &$20.7\pm7.3\pm2.1$      &$30.7\pm11.4\pm3.1$       &$23.6\pm6.1\pm1.9$\\
-%  $4.260$    &$825.7$   &$94.4\pm10.5$/$75.9\pm11.9$   &$24.7/17.6$      &$1.28$   &$1.054$   &$14.7\pm1.6\pm0.6$      &$16.6\pm2.6\pm0.6$        &$15.3\pm1.3\pm0.5$\\
-%  $4.360$    &$539.8$   &$19.8\pm5.3$/$23.9\pm7.7$     &$33.8/23.8$      &$0.95$   &$1.051$   &$4.7\pm1.2\pm0.4$       &$8.0\pm2.6\pm0.7$         &$5.3\pm1.1\pm0.5$\\
-%  \hline
-%  \hline
-%    \end{tabular}
-%    \label{ResultsEta}
-%\end{table*}
-%%%%%%%%%%%%
-%
-%The same event selection criteria are performed on the 13 data samples at different c.m. energy.
-%Beside the data sample at $\sqrt{s}$ = 4.230 and 4.260 GeV, the $\eta$ signals are
-%also observed clearly at $\sqrt{s}$ = 4.190, 4.210, 4.220, 4.245 and 4.360 GeV, respectively.
-%The same fitting process is performed on these data samples, and the fit yields are
-%shown in Table~\ref{ResultsEta}, too.
-%Since there are not obvious $\eta$ signal observed in the other 6 c.m. energy points
-%($\sqrt{s}$ = 3.810, 3.900, 4.090, 4.310, 4.390, 4.420 GeV), the upper limits at a
-%90\% confidence level (C.L.) on the Born cross section are determined.
-%We extract the upper limits with $J/\psi\to\mu^+\mu^-$ decay mode only.
-%Since the statistics are very limited, the number of the observed events is obtained by
-%counting the entries in $\eta$ signal region ($0.518<M(\gamma\gamma)<0.578$ GeV/c$^2$),
-%and the number of background events in the signal region can be estimated with the number
-%of events in $\eta$ sideband region or $J/\psi$ sideband region (with additional $\eta$
-%signal mass window requirement) by assuming a flat distribution of background around signal regions,
-%respectively.
-%The $\eta$ sideband region is defined as $0.383<M(\gamma\gamma)<0.503$ GeV/c$^2$ and
-%$0.593<M(\gamma\gamma)<0.713$ GeV/c$^2$, and $J/\psi$ sideband region is defined as
-%$2.932<M(\mu^+\mu^-)<3.052$ GeV/c$^2$ and $3.142<M(\mu^+\mu^-)<3.262$ GeV/c$^2$, which are
-%all four times on the size of its signal region.
-%The number of the observed events in signal region ($N^{sg}_{\eta}$), as well as that in
-%the $\eta$ sideband band regions ($N^{sb}_{\eta}$) and in the $J/\psi$ sideband bands
-%region ($N^{sb}_{J/\psi}$) are all listed in Table~\ref{ResultsEtaUpper}.
-%%%%%%%%%%%%%%%%%%%
-%\begin{table*}[htbp]
-%  \centering
-%  \caption{The upper limits results on $e^{+}e^{-} \to \eta J/\psi$ in $\mu^{+}\mu^{-}$ mode. The table shows the c.m energy $\sqrt{s}$, integrated luminosity $\mathcal{L}_{int}$, number of observed $\eta$ events $N^{sg}_{\eta}$, number of background from $\eta$ sideband $N^{sb}_{\eta}$, number of background from $J/\psi$ sideband $N^{sb}_{J/\psi}$, efficiency $\epsilon$, upper limit of signal number with the consideration of selection efficiency $N^{up}_{\eta}/\epsilon$(at $90\%$ C.L.), radiative correction factor $(1+\delta^{ISR})$, vacuum polarization factor $(1+\delta^{VP})$, Born cross section $\sigma^{B}$ and upper limit on Born cross sections $\sigma^{B}_{up}$(at $90\%$ C.L.). The first uncertainties are statistical and the second systematic.}
-%  \begin{tabular}{ccccccccccc}
-%  \hline
-%  \hline
-%  $\sqrt{s}$(GeV) &$\mathcal{L}(pb^{-1})$ &$N^{sg}_{\eta}$ &$N^{sb}_{\eta}$ &$N^{sb}_{J/\psi}$  &$\epsilon (\%)$&$N^{up}_{\eta}/\epsilon$&$(1+\delta^{ISR})$ &$(1+\delta^{VP})$ &$\sigma^{B}$(pb) &$\sigma^{B}_{up} (pb)$\\
-%  $3.810$     &$50.5$      &$5$         &$9$    &$11$   &$32.3$   &$<23.2$        &$1.24$       &$1.056$       &$5.5^{+7.1}_{-4.6}\pm0.6$                     &$<15.6$\\
-%  $3.900$     &$52.8$      &$5$         &$8$    &$7$    &$39.6$   &$<19.6$        &$0.82$       &$1.049$       &$7.2^{+8.5}_{-5.5}\pm1.3$                     &$<19.3$\\
-%  $4.090$     &$52.6$      &$7$         &$7$    &$5$    &$31.3$   &$<34.0$        &$1.00$       &$1.052$       &$13.1^{+9.7}_{-6.6}\pm2.0$                    &$<27.4$\\
-%  $4.310$     &$44.9$      &$1$         &$4$    &$2$    &$25.9$   &$<10.5$        &$1.18$       &$1.053$       &$0.0^{+7.2}_{-2.8}\pm0.0$                     &$<8.6$\\
-%  $4.390$     &$55.2$      &$5$         &$1$    &$4$    &$25.0$   &$<37.6$        &$1.32$       &$1.051$       &$10.7^{+7.7}_{-4.9}\pm0.6$                    &$<22.0$\\
-%  $4.420$     &$44.7$      &$1$         &$3$    &$4$    &$20.3$   &$<14.6$        &$1.57$       &$1.053$       &$0.7^{+6.9}_{-2.6}\pm0.4$                     &$<8.8$\\
-%  \hline
-%  \hline
-%    \end{tabular}
-%    \label{ResultsEtaUpper}
-%\end{table*}
-%%%%%%%%%%%
-%
-%The Born-order cross section is determined from:
-%\begin{center}
-%\begin{equation}
-%\sigma^{B}=\frac{N^{obs}}{\mathcal{L}_{int}\cdot (1+\delta^{ISR})\cdot (1+\delta^{VP})
-%\cdot \epsilon \cdot \cal B }
-%\label{eqcross}
-%\end{equation}
-%\end{center}
-%where $N^{obs}$ is number of observed signal events,
-%$\mathcal{L}_{int}$ is integrated luminosity,
-%$(1+\delta^{ISR})$ is ISR correction factor which is obtained from QED calculation~\cite{QED}
-%and taking the line shape of Born cross section measured by Belle experiment~\cite{belle} as input.
-%$(1+\delta^{VP})$ is the vacuum polarization (VP) factor which is taken from QED calculation with an
-%accuracy of $0.5\%$~\cite{VP},
-%$\epsilon$ is selection efficiency,
-%$\cal B$ is product branching ratio, $\BR(J/\psi \to \LL)\cdot \BR(\eta \to \gamma\gamma)$, cited from Particle Data Group (PDG)~\cite{PDG}.
-%
-%The final Born production cross sections of $e^+e^-\to \eta J/\psi$ at 7 c.m. energy points with significant signals are listed in Table~\ref{ResultsEta}.
-%
-%For the other 6 c.m. energy points in which the $\eta$ signal is not significant, we set
-%upper limits at a 90\% C.L. on the Born cross section.
-%The upper limit is calculated by a frequentist method with profile likelihood treatment
-%of systematic uncertainties, which is implemented by a C++ class TROLKE in ROOT framework~\cite{TROLKE}.
-%The number of observed signal events and estimated background events are assumed to follow Poisson distribution,
-%and the efficiency are assumed to follow Gaussian distribution.
-%Since the number of backgrounds can be estimated from $\eta$ sideband or $J/\psi$ sideband events, respectively, the
-%conservative results of the upper limit on Born cross section are taken as the final results.
-%The upper limits on the Born cross section at these 6 c.m. energy points are listed in
-%Table ~\ref{ResultsEtaUpper}, respectively.
-%
-%Since there are not significant signals of $e^{+}e^{-} \to \pi^{0}J/\psi$ observed in all
-%13 c.m. energy points, we set the upper limits at a 90\% C.L. on its Born cross section.
-%The same frequentist method is implemented to extract the upper limits.
-%Where, the number of observed events is obtained by counting the entries in $\pi^0$ signal
-%region ($0.120<M(\gamma\gamma)<0.150$ GeV/c$^2$),
-%and the number of background events in the signal region can be estimated with the number
-%of events in the $\pi^0$ sideband region ($0.055<M(\gamma\gamma)<0.115$ GeV/c$^2$ and
-%$0.155<M(\gamma\gamma)<0.215$ GeV/c$^2$) or $J/\psi$ sideband region
-%($2.932<M(\mu^+\mu^-)<3.052$ GeV/c$^2$ and $3.142<M(\mu^+\mu^-)<3.262$ GeV/c$^2$)
-%(with additional $\pi^0$ signal mass window requirement), and the conservative
-%upper limits on the Born cross section are take as the final results.
-%The number of observed events in the signal region ($N^{sg}$), in the $\pi^0$
-%sideband region ($N^{sb}_{\pi^0}$) and in the $J/\psi$ sideband region ($N^{sb}_{J/\psi}$)
-%as well as the upper limit at a 90\% C.L. on the Born cross section at 13 c.m. energy
-%point are list in Table~\ref{Npi0Jpsi}.
-%
-%%%%%%%%%%%%%%%%%%%
-%\begin{table*}[htbp]
-%  \centering
-%  \caption{The upper limits results on $e^{+}e^{-} \to \pi^{0} J/\psi$. The table shows the number of observed $\pi^{0}$ events $N^{sg}$, number of background by $\pi^{0}$ sideband events $N^{sb}_{\pi^{0}}$, number of background by $J/\psi$ sideband events $N^{sb}_{J/\psi}$, efficiency $\epsilon$, upper limit of signal number with the consideration of selection efficiency $N^{up}_{\pi^{0}}(\mu^{+}\mu^{-})/\epsilon$(at $90\%$ C.L.) and upper limit on Born cross sections $\sigma^{B}_{up}$(at $90\%$ C.L.).}
-%  \begin{tabular}{ccccccccc}
-%  \hline
-%  \hline
-%  $\sqrt{s}$(GeV) &$N^{sg}$  &$N^{sb}_{\pi^{0}}$  &$N^{sb}_{J/\psi}$ &$\epsilon (\%)$   &$N^{up}_{\pi^{0}}/\epsilon$  &$(1+\delta^{ISR})$ &$(1+\delta^{VP})$    &$\sigma^{B}_{up}$(pb)\\
-%  $3.810$         &$1$       &$4$                 &$1$               &$16.9$            &$<20.2$                      &$1.24$             &$1.056$              &$<5.4$\\
-%  $3.900$         &$0$       &$1$                 &$2$               &$28.3$            &$<6.2$                       &$0.82$             &$1.049$              &$<2.5$\\
-%  $4.090$         &$0$       &$0$                 &$2$               &$20.1$            &$<9.9$                       &$1.00$             &$1.052$              &$<3.2$\\
-%  $4.190$         &$0$       &$0$                 &$0$               &$23.1$            &$<8.6$                       &$0.93$             &$1.056$              &$<3.7$\\
-%  $4.210$         &$1$       &$1$                 &$1$               &$21.1$            &$<16.2$                      &$1.08$             &$1.057$              &$<4.7$\\
-%  $4.220$         &$0$       &$1$                 &$0$               &$20.1$            &$<9.9$                       &$1.15$             &$1.057$              &$<2.7$\\
-%  $4.230$         &$4$       &$16$                &$13$              &$19.2$            &$<27.0$                      &$1.18$             &$1.056$              &$<0.4$\\
-%  $4.245$         &$1$       &$1$                 &$2$               &$17.8$            &$<19.2$                      &$1.26$             &$1.056$              &$<4.8$\\
-%  $4.260$         &$3$       &$8$                 &$10$              &$17.4$            &$<28.4$                      &$1.28$             &$1.054$              &$<0.5$\\
-%  $4.310$         &$0$       &$0$                 &$0$               &$18.4$            &$<10.8$                      &$1.18$             &$1.053$              &$<3.5$\\
-%  $4.360$         &$2$       &$3$                 &$4$               &$23.7$            &$<19.4$                      &$0.95$             &$1.051$              &$<0.6$\\
-%  $4.390$         &$1$       &$1$                 &$1$               &$18.7$            &$<19.5$                      &$1.32$             &$1.051$              &$<4.6$\\
-%  $4.420$         &$0$       &$2$                 &$2$               &$15.2$            &$<10.1$                      &$1.57$             &$1.053$              &$<2.4$\\
-%  \hline
-%  \hline
-%    \end{tabular}
-%    \label{Npi0Jpsi}
-%\end{table*}
-%%%%%%%%%%%%
-%
-%
-%\section{Systematic Uncertainties}
-%Several sources of systematic uncertainties are considered in the measurement of Born cross section.
-%These include differences between data and MC simulation for the tracking algorithm, photon detection,
-%kinematic fit, mass resolution, the fitting procedure, the hit depth in MUC, MC simulation of
-%ISR correction factor and vacuum polarization factor, as well as branching fractions of
-%intermediate states decays and luminosity measurement.
-%
-%(a) \emph{Tracking:} The uncertainty of tracking efficiency is investigated using a control sample
-%$\psi(3686)\to\pi^{+}\pi^{-} J/\psi$ with subsequent decay of $J/\psi\to\ell^+\ell^-$.
-%The difference in efficiency for lepton between data and MC is estimated to be 1\% per track,
-%Therefore, 2\% uncertainty is taken as the systematic uncertainty for two leptons.
-%
-%(b) \emph{Photon detection efficiency:} The uncertainty due to photon detection and reconstruction is 1\% per photon~\cite{Gamma}.
-%The value is determined from studies using clean control samples, such as $J/\psi\to\rho^{0}\pi^{0}$ and $e^{+}e^{-} \to \gamma\gamma$.
-%Therefore, uncertainties of 2\% is taken for detection efficiency of two photons.
-%
-%(c) \emph{Kinematic fit:} The uncertainty associated with kinematic fit comes from the inconsistency on track helix
-%parameters between data and MC simulation.
-%Following the procedure described in Ref.~\cite{Helix}, we take the difference on the efficiencies
-%between analyses with and without the helix parameters correction as the systematic uncertainty.
-%
-%(d) \emph{Mass window requirements:} A mass window requirement on $J/\psi$ mass will have systematic uncertainty on its efficiency.
-%The $J/\psi$ signal of data at $\sqrt{s}$ = 4.230 GeV is fitted with a MC shape convoluted a Gaussian function, where the
-%parameters of Guassian function are floating. The fits yield: mean value of Gaussian function is $2.8\pm0.5$ MeV in $\mu^{+}\mu^{-}$ mode
-%and $2.4\pm1.1$ MeV in $e^{+}e^{-}$ mode; width of Gaussian function is $2.1\pm1.5$ MeV for $\mu^+\mu^-$ mode and $0.0\pm1.6$ MeV for $e^+e^-$ mode.
-%To evaluated the systematic effects on the mass window requirement, the invariant mass of $\ell^+\ell^-$
-%in MC samples are smeared with a Gaussian function, where the parameters of Gaussian function are
-%obtained from the fit of $J/\psi$ signal of data.
-%The difference on estimated efficiencies between the signal MC sample with and without mass
-%resolution smearing is considered as the systematic uncertainty.
-%%%%%%%%%%%%%%%%%%%
-%\begin{table*}[htbp]
-%  \centering
-%  \caption{The summary of systematic uncertainties ($\%$) in the cross section measurement of $e^{+}e^{-} \to \eta J/\psi$
-%  with significant signal in $\mu^{+}\mu^{-}$($e^{+}e^{-}$) mode. The common uncertainties (Luminosity, Tracking, Photon, Branching fraction and others) between two modes are shown together.}
-%  \begin{tabular}{cccccccc}
-%  \hline
-%  \hline
-%  Source/$\sqrt{s}$(GeV)    &4.190        &4.210        &4.220        &4.230        &4.245         &4.260         &4.360 \\
-%  \hline
-%  Luminosity                &1.0          &1.0          &1.0          &1.0          &1.0           &1.0           &1.0       \\
-%  Tracking                  &2.0          &2.0          &2.0          &2.0          &2.0           &2.0           &2.0       \\
-%  Photon                    &2.0          &2.0          &2.0          &2.0          &2.0           &2.0           &2.0       \\
-%  Kinematic fit             &0.4 (0.4)    &0.4 (0.4)    &0.4 (0.3)    &0.4 (0.3)    &0.5 (0.5)     &0.4 (0.4)     &0.3 (0.4)  \\
-%  Mass window               &0.2 (0.1)    &0.2 (0.1)    &0.2 (0.1)    &0.2 (0.1)    &0.2 (0.1)     &0.2 (0.1)     &0.2 (0.1)  \\
-%  Fitting range             &0.0 (1.0)    &0.4 (0.7)    &0.3 (2.6)    &0.1 (2.2)    &0.0 (1.0)     &0.0 (0.6)     &8.6 (7.5)  \\
-%  Signal shape              &0.3 (1.1)    &0.3 (1.1)    &0.3 (1.1)    &0.3 (1.1)    &0.3 (1.1)     &0.3 (1.1)     &0.3 (1.1)  \\
-%  Background shape          &4.6 (0.1)    &3.9 (6.8)    &2.8 (0.0)    &0.0 (0.1)    &9.7 (9.3)     &0.2 (0.0)     &0.5 (0.4)  \\
-%  ISR factor                &3.8 (4.3)    &4.0 (3.6)    &2.8 (1.3)    &1.9 (1.6)    &0.3 (0.5)     &2.6 (0.2)     &1.0 (2.0)  \\
-%  Branching fraction        &1.2          &1.2          &1.2          &1.2          &1.2           &1.2           &1.2       \\
-%  Others                    &1.0          &1.0          &1.0          &1.0          &1.0           &1.0           &1.0       \\
-%  Sum                       &6.9 (5.7)    &6.6 (8.5)    &5.3 (4.6)    &3.9 (4.7)    &10.3 (10.0)   &4.3 (3.6)     &9.3 (8.6)  \\
-%  \hline
-%  \hline
-%    \end{tabular}
-%    \label{systematic1}
-%\end{table*}
-%%%%%%%%%%%
-%
-%(e) \emph{Fitting procedure:} For the 7 c.m. energy points with clearly observed $\eta$ signal, the fits on the two photons
-%invariant mass $M(\gamma\gamma)$ are performed to extract the production of $e^+e^-\to \eta J/\psi$.
-%The following three aspects are considered when evaluate the systematic uncertainty associated with
-%the fit procedure.
-%(1) {\it Fitting range:} In the nominal fit, the $M(\gamma\gamma)$ is fitted from a region from 0.2 to 0.9 GeV/c$^2$.
-%  A alternative fit with different fitting range, 0.25 to 0.85 GeV/c$^2$, is performed, and results in the differences
-%  on the production yield are treated as the systematic uncertainty from fitting range.
-%(2) {\it Signal shape:} In the nominal fit, signal shape is described with MC shape convoluted
-%   with a Gaussian function. A alternative fit with Crystal Ball function for the $\eta$ signal shape
-%   is performed,  where the parameters of the Crystal Ball function in the different c.m. energy points
-%   are fixed to those obtained from the fitting $\eta$ shape at $\sqrt{s}$ = 4.230 GeV.
-%   The difference on the production yield are considered as the systematic uncertainty from the signal shape.
-%(3) {\it Background shape:} In the nominal fit, background shapes are described as a second-order
-%   polynomial function. The fitting with a third-order polynomial function for the background shape
-%   is used to estimated the uncertainty from background shape.
-%For the others 6 c.m. energy point without $\eta$ signal observed, the frequentist method is imposed to
-%set the upper limits on the Born cross section, and number counting method is used to estimate
-%the number of signal and background events. Two different sideband regions, $i.e.$ $\eta$ sideband region or
-%$J/\psi$ sideband region, are used to estimated the uncertainty from the background estimation.
-%The uncertainty has been considered in the upper limit setting by using the conservative upper limits
-%as final results.
-%
-%(f) \emph{MUC cut:} In the searching for $e^{+}e^{-} \to \pi^{0} J/\psi$ study, a further requirement on hit depth in MUC
-%for muon tracks is implemented to remove the background $e^{+}e^{-} \to \pi^+\pi^-\pi^{0}$.
-%The corresponding systematic uncertainty, 1.2\%, which is estimated by study a control sample of
-%$e^{+}e^{-} \to \pi^{+}\pi^{-} J/\psi$ with subsequent decay $J/\psi\to \mu^{+}\mu^{-}$, is taken
-%as the systematic uncertainty.
-%
-%(g) \emph{ISR and VP factor:} The MC simulation uncertainty includes uncertainty associated with ISR correction factor and with
-%vacuum polarization factor.
-%The ISR correction factor uncertainty due to the line shape of cross section is estimated using
-%the different line shapes from Belle experiment~\cite{belle} and the combination of Belle's and our own results.
-%The uncertainty associated with vacuum polarization factor is $0.5\%$~\cite{VP}.
-%
-%(h) \emph{Luminosity:} The integrated luminosity of data samples used in this analysis are measured using large angle
-%Bhabha events, and the corresponding uncertainties are estimated to be 1.0$\%$~\cite{Luminosity}.
-%
-%(i) \emph{Branching fraction:} The uncertainties due to branching fraction of $J/\psi \to \LL$, $\eta \to \gamma \gamma$
-%and $\pi^{0} \to \gamma \gamma$ are taken from PDG ($2012$)~\cite{PDG}.
-%
-%(j) \emph{Other systematic uncertainties:} Other sources of systematic error, including trigger simulation, event start time determination,
-%the total systematic error due to these sources is estimated to be less than $1.0\%$.
-%
-%Assuming all of the above systematic uncertainties, shown in Table~\ref{systematic1}, Table~\ref{systematic2} and Table~\ref{systematic3}, are
-%independent, the total systematic uncertainties are obtained by adding the individual
-%uncertainties in quadrature.
-%
-%%%%%%%%%%%%%%%%%%%
-%\begin{table*}[htbp]
-%  \centering
-%  \caption{The summary of systematic uncertainties ($\%$) in the upper limit cross section measurement of $e^{+}e^{-} \to \eta J/\psi$ in $\mu^{+}\mu^{-}$ mode.}
-%  \begin{tabular}{ccccccc}
-%  \hline
-%  \hline
-%  Source/$\sqrt{s}$(GeV)    &3.810        &3.900        &4.090        &4.310        &4.390         &4.420  \\
-%  \hline
-%  Luminosity                &1.0          &1.0          &1.0          &1.0          &1.0           &1.0   \\
-%  Tracking                  &2.0          &2.0          &2.0          &2.0          &2.0           &2.0   \\
-%  Photon                    &2.0          &2.0          &2.0          &2.0          &2.0           &2.0   \\
-%  Kinematic fit             &0.4          &0.4          &0.4          &0.4          &0.4           &0.4   \\
-%  Mass window               &0.2          &0.2          &0.2          &0.2          &0.2           &0.2   \\
-%  ISR factor                &0.2          &1.5          &0.1          &4.9          &2.3           &3.0   \\
-%  Branching fraction        &1.2          &1.2          &1.2          &1.2          &1.2           &1.2   \\
-%  Others                    &1.0          &1.0          &1.0          &1.0          &1.0           &1.0   \\
-%  Sum                       &3.4          &3.7          &3.4          &6.0          &4.1           &4.5   \\
-%  \hline
-%  \hline
-%    \end{tabular}
-%    \label{systematic2}
-%\end{table*}
-%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%
-%\begin{table*}[htbp]
-%  \centering
-%  \caption{The summary of systematic uncertainties ($\%$) in the cross section measurement of $e^{+}e^{-} \to \pi^{0} J/\psi$ in $\mu^{+}\mu^{-}$ mode.}
-%  \begin{tabular}{cccccccccccccc}
-%  \hline
-%  \hline
-%  Source/$\sqrt{s}$(GeV)  &3.810  &3.900  &4.090  &4.190  &4.210  &4.220  &4.230  &4.245  &4.260  &4.310  &4.360  &4.390  &4.420\\
-%  Luminosity              &1.0    &1.0    &1.0    &1.0    &1.0    &1.0    &1.0    &1.0    &1.0    &1.0    &1.0    &1.0    &1.0\\
-%  Tracking                &2.0    &2.0    &2.0    &2.0    &2.0    &2.0    &2.0    &2.0    &2.0    &2.0    &2.0    &2.0    &2.0\\
-%  Photon                  &2.0    &2.0    &2.0    &2.0    &2.0    &2.0    &2.0    &2.0    &2.0    &2.0    &2.0    &2.0    &2.0\\
-%  Kinematic fit           &0.4    &0.4    &0.4    &0.4    &0.4    &0.4    &0.4    &0.4    &0.4    &0.4    &0.4    &0.4    &0.4\\
-%  Mass window             &0.2    &0.2    &0.2    &0.2    &0.2    &0.2    &0.2    &0.2    &0.2    &0.2    &0.2    &0.2    &0.2\\
-%  MUC cut                 &1.2    &1.2    &1.2    &1.2    &1.2    &1.2    &1.2    &1.2    &1.2    &1.2    &1.2    &1.2    &1.2\\
-%  ISR factor              &0.2    &1.5    &0.1    &3.8    &4.0    &2.8    &1.9    &0.3    &2.6    &4.9    &1.0    &2.3    &3.0\\
-%  Branching fraction      &1.0    &1.0    &1.0    &1.0    &1.0    &1.0    &1.0    &1.0    &1.0    &1.0    &1.0    &1.0    &1.0\\
-%  Others                  &1.0    &1.0    &1.0    &1.0    &1.0    &1.0    &1.0    &1.0    &1.0    &1.0    &1.0    &1.0    &1.0\\
-%  Sum                     &3.6    &3.9    &3.6    &5.2    &5.4    &4.5    &4.0    &3.6    &4.4    &6.1    &3.7    &4.2    &4.7\\
-%  \hline
-%  \hline
-%    \end{tabular}
-%    \label{systematic3}
-%\end{table*}
-%%%%%%%%%%%
-%
-%For 7 c.m. energy points with significant signals, since the results from the two $J/\psi$ decay modes
-%are consistent with each other within their uncertainties, the combined cross sections are calculated
-%by considering the correlation of uncertainties between these two measurement~\cite{Combined}.
-%
-%\section{Summary and Discussion}
-%In summary, using electron positron collision data samples collected with BESIII detector at
-%13 c.m. energies from 3.810 to 4.420 GeV, we perform analysis of $e^{+}e^{-} \to \eta J/\psi$.
-%The significant $\eta$ signals are observed at 7 c.m. energy points, and the corresponding
-%Born cross sections are measured.
-%The upper limits at a 90\% C.L. are set for the others 6 c.m. energies points without $\eta$ signal observed.
-%Meanwhile, we search for the process of $e^{+}e^{-} \to \pi^0 J/\psi$, no significant signals are
-%observed, and upper limits at a 90\% C.L. on the Born cross section are set for all 13 c.m. energy points.
-%
-%The measured Born cross section of $e^{+}e^{-} \to \eta J/\psi$ agree very well with the previous measurements~\cite{etaJpsi1,4040,belle}, but with much improved accuracy.
-%Figure~\ref{BES_BELLE} (left) shows the comparison of Born cross section from Belle experiment and this analysis,
-%a clear structure is observed around 4.220 GeV.
-%The measured Born cross section also is compared to that of $e^{+}e^{-}
-%\to \pi^{+}\pi^{-} J/\psi$ from Belle experiment in Fig.~\ref{BES_BELLE} (right), the two line shapes are not consistent
-%well with each others, which indicates that the observed structure in $\eta J/\psi$ cross section
-%does not arise from the $Y$(4260) state.
-%The ratio of Born cross section at 4.260 GeV to that of 4.230 GeV,
-%$R^{4.260}_{4.230}(e^+e^-\to\eta J/\psi)=\frac{\sigma^{4.260}(e^+e^-\to\eta J/\psi)}{\sigma^{4.230}(e^+e^-\to\eta J/\psi)}$,
-%%%%%%%%%%%%%%%%%%%%%
-%\begin{figure}[htbp]
-%\begin{center}
-%\begin{overpic}[width=7.0cm,height=5.0cm,angle=0]{graph/BES_BELLE_etaJpsi.eps}
-%\put(25,60){\large\bf (a)}
-%\end{overpic}
-%\begin{overpic}[width=7.0cm,height=5.0cm,angle=0]{graph/BES_BELLE_PiPiJpsi.eps}
-%\put(25,60){\large\bf (b)}
-%\end{overpic}
-%\end{center}
-%\caption{The measured Born cross section of $e^{+}e^{-} \to \eta J/\psi$ (a) and $e^{+}e^{-} \to \pi^{+}\pi^{-} J/\psi$ (b). The black square dots with error are results from Belle, blue star dot is from BESIII(2012), and the red dots are from BESIII(2013).}\label{BES_BELLE}
-%\end{figure}
-%%%%%%%%%%%%%
-%is calculated to be $0.34 \pm 0.04$ (the common systematic uncertainties cancel in the ratio calculation),
-%which is found to agree very well with the ratio
-%$R^{4.260}_{4.230}(e^+e^-\to\omega \chi_{c0})=\frac{\sigma^{4.260}(e^+e^-\to\omega \chi_{c0})}{\sigma^{4.230}(e^+e^-\to\omega \chi_{c0})}$ = $0.43 \pm 0.13$,
-%for the process of $e^+e^-\to\omega \chi_{c0}$~\cite{OmegaChicj}. This may indicate that the production
-%of $\eta J/\psi$ and $\omega \chi_{c0}$ are from same source probably. More data around these energy region
-%may shed light to clarify this fact. The measured upper limits on Born cross section of $e^+e^-\to\pi^0 J/\psi$
-%are within the the theoretical prediction~\cite{Theory2}.
-%
-%\acknowledgments
-%The BESIII collaboration thanks the staff of BEPCII and the computing center for their strong support.
-%This work is supported in part by the Ministry of Science and Technology of China under Contract No. 2009CB825200;
-%Joint Funds of the National Natural Science Foundation of China under Contracts Nos. 11079008, 11179007, U1332201;
-%National Natural Science Foundation of China (NSFC) under Contracts Nos.
-%10625524, 10821063, 10825524, 10835001, 10935007, 11125525, 11235011, 11335008, 11275189, 11322544, 11375170;
-%the Chinese Academy of Sciences (CAS) Large-Scale Scientific Facility Program;
-%CAS under Contracts Nos. KJCX2-YW-N29, KJCX2-YW-N45;
-%100 Talents Program of CAS;
-%German Research Foundation DFG under Contract No. Collaborative Research Center CRC-1044;
-%Istituto Nazionale di Fisica Nucleare, Italy;
-%Ministry of Development of Turkey under Contract No. DPT2006K-120470;
-%National Natural Science Foundation of China (NSFC) under Contract No. 11275189;
-%U. S. Department of Energy under Contracts Nos. DE-FG02-04ER41291, DE-FG02-05ER41374, DE-FG02-94ER40823, DESC0010118;
-%U.S. National Science Foundation;
-%University of Groningen (RuG) and the Helmholtzzentrum fuer Schwerionenforschung GmbH (GSI), Darmstadt;
-%WCU Program of National Research Foundation of Korea under Contract No. R32-2008-000-10155-0.
-%
-%
-%
+\section{MEASUMENT OF THE MATRIX ELEMENT FOR DALITZ PLOT OF $\eta\ra\pio\pio\pio$}
+Fig.~\ref{fig:etaneu_dalZ_datamc} (a) shows the Dalitz plot for a pure phase space 
+distribution. The Z distribution is flat from $Z = 0$ to $Z \approx 0.76$ and then
+falls to zero at $Z = 1$ due to kinematic boundaries. We would choose our fit range
+as $(0, 0.7)$. Fig.~\ref{fig:etaneu_dalZ_datamc} (b) shows the Dalitz plot for data.
+
+\begin{figure}[!htbp]
+    \begin{center}
+        \begin{overpic}[width=0.4\textwidth]{figures/etaneu/etaneu_dalZ_mc.eps}
+            \put(85,60){\bf (a)}
+        \end{overpic}
+        \begin{overpic}[width=0.4\textwidth]{figures/etaneu/etaneu_dalZ_data.eps}
+            \put(85,60){\bf (b)}
+        \end{overpic}
+    \end{center}
+    \caption{\label{fig:etaneu_dalZ_datamc}(a) The Dalitz plot in terms of Z for phase space MC
+        sample of $\eta\to\pio\pio\pio$. (b) The experimental form of the Dalitz diagram}
+\end{figure}
+
+To describe the event density distribution on Z, p.d.f. described as below would be used:
+\begin{equation}
+    p(Z) = |A(Z)|^2\otimes{}R(Z)\times\epsilon(Z)
+\end{equation}
+where $|A(Z)|^{2}$ is described in Eq.~\ref{eq:etaneu_amp}, $R(Z)$ 
+is the resolution of Z and $\varepsilon(Z)$ is the efficiency of Z which
+is parametrized with $1^{st}$ order Chebychev Polynomial. A phase space
+MC sample is used for efficiency description.
+
+The free parameter of $\alpha$ of p.d.f. is optimized with an unbinned
+maximum likelihood fit that minimizes a log-Likelihood function built
+as follows:
+\begin{equation}
+	-ln{\cal L}(Z) = -\sum_{i=1}^{N_{data}}ln{}p_{i}(Z)
+\end{equation}
+where $N_{data}$ is the events within our fit range.
+Within our fit range, 27672 events in total are used. Fitting to data
+gives a result $\alpha = -0.055 \pm 0.014$ with goodness of fit $\chi^{2}/NDF = 11.39/12$.
+The error is statistical only and our fit procedure has been verified with MC
+with checking the input and output value. 
+
 %\begin{thebibliography}{99}
 %   %%Y(4260) and Y(4360) and Y(4660) states
 %   \bibitem{Y(4260)1} B. Aubert {\it et al.}  (BABAR Collaboration), Phys.\ Rev.\ Lett.\ {\bf 95}, 142001 (2005);\\
