@@ -342,4 +342,30 @@ gives a result $\alpha = -0.055 \pm 0.014$ with goodness of fit $\chi^{2}/NDF = 
 The error is statistical only and our fit procedure has been verified with MC
 with checking the input and output value. 
 
+\section{MEASUMENT OF THE MATRIX ELEMENT FOR DALITZ PLOT OF $\etap\ra\pio\pio\pio$}
+Signal p.d.f. for decay $\etap\ra\pio\pio\pio$ is same as that for $\eta\ra\pio\pio\pio$,
+while special treatment of peaking background from $\etap\ra\eta\pio\pio$ and non-peaking
+background should be given.
+We perform background subtraction in the fit,
+and an unbinned maximum likelihood fit is used to minimize the log-Likelihood function which is built as follows:
+\begin{equation}\label{eq:likelyhood}
+	-ln{\cal L}(Z) = -(\sum_{i=1}^{N_{data}}(ln{}p_{i}(Z) - a\sum_{j=1}^{N_{peaking bg}}ln{}p_{j}(Z)-b\sum_{k=1}^{N_{non-peaking}}ln{}p_{k}(Z)) 
+\end{equation}
+In Eq.~(\ref{eq:likelyhood}), $a\sum_{j=1}^{N_{peaking bg}}ln{}p_{j}(Z)$ is for $\eta'\to\eta\pio\pio$ peaking background.
+Exclusive MC sample of 4 million events is generated
+according to the matrix elements measured in AAAAA. 
+$N_{peaking bg}$ is the number of events for MC sample after final
+selection and a is the normalized factor which is estimated from expected peaking background events.
+$b\sum_{k=1}^{N_{non-peaking}}ln{}p_{k}(Z)$ is used to describe other backgrounds and
+b is the normalized factor set as 1. Side band regions are chosen as $(0.758, 0.793)$ GeV/$c^{2}$ ~and $(1.008, 1.043)$ GeV/$c^{2}$.
+
+As showed in Fig.~\ref{fig:etapneu_dalfit}, dots with errors bars
+are for data with subtraction of $\eta'\to\eta\pio\pio$ peaking background and non-$\eta'$ backgrounds
+and blue line represents fitted result. Our fit gives a result as $\alpha = -0.687 \pm 0.049$ and $\chi^{2}/NDF = 9.90/7$.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figures/etapneu/etapneu_dalfit.eps}
+    \caption{\label{fig:fitalpha_data_etapneu}Fitting Results of Data}
+\end{figure}
 \end{document}
