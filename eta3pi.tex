@@ -117,9 +117,9 @@ and into the structure of particles. Analyses of hadronic decays of $\eta/\eta'$
 difference of u,d quark, testing Chiral Pertubation Theory (ChPT) and providing validation of models for
 $\pi{}-\pi$ final state interaction. There have been a lot of groups had measured matrix elements of the decays $\eta\ra{}3\pi$
 and our measurements give a reasonable agreement with those results. For decay of $\etap\ra{}3\pio$, two groups, the GAMS, GAM2 collaboration,
-had measured related Dalitz plot parameter and the results showed large discrepancy.
+had measured related Dalitz plot parameter and the results showed large discrepancy\cite{Alde:1987jt}\cite{Blik:2008zz}.
 
-In this article, with a new level of precision, we present results for the Dalitz plot parameter for $\etap\to\pio\pio\pio$ based on
+In this article, with a new level of precision, we present results for the Dalitz plot parameter for $\etap\ra\pio\pio\pio$ based on
 about 1.3 billion $\jpsi$ events accumulated by BESIII at BEPCIII\@.
 
 \section{DETECTOR AND MONTE CARLO SIMULATION}
@@ -198,12 +198,12 @@ described by two degrees of freedom which can be chosen as:
 where $T_{\pi}$ denote the kinetic energies of mesons in the $\eta$
 rest frame and $Q = T_{\eta} + T_{\pip} + T_{\pim} = m_{\eta} -m_{\pip} - m_{\pim} - m_{\pio}$. For the charged channel, the Dalitz plot parametrization reads
 \begin{equation}\label{eq:etacha_amp}
-        |A(X,Y)|^{2} = N(1 + aY + bY^2 + cX + dX^2 + eXY + fY^{3} + \ldots)
-    \end{equation}
+	|A(X,Y)|^{2} = N(1 + aY + bY^2 + cX + dX^2 + eXY + fY^{3} + \ldots)
+\end{equation}
 where real parameters a,b,c,d,e and f are called Dalitz parameters and N is the normalized factor. The non-zero odd power terms of X (c and e) imply the charge-parity violation.
 
 Due to the symmetry of three pions, the parameters of the Dalitz plot can be reduced to a single for neutral decays. In the decays $\eta/\etap\ra\pio\pio\pio$, this variable
-is chosen convention to be:
+is chosen conveniently to be:
 \begin{equation}
     Z = X^2 + Y^2 = \frac{2}{3}\sum^{3}_{i=1}(\frac{3T_{i}}{Q} - 1)^{2}
 \end{equation}
@@ -214,9 +214,9 @@ Then parametrization of Dalitz plot reads
 where $\alpha$ is the slope parameter of the Dalitz plot, N is the normalized factor.
 
 \section{MEASUMENT OF THE MATRIX ELEMENTS FOR DALITZ PLOT OF $\eta\ra\pip\pim\pio$}
-To avoid the problem from mass resolution, we use the information after 6C kinematic fit to calculate the X and Y values
-where the reconstructed momenta of two gammas are constrained to
-the $\pio$ mass and the reconstructed momenta of $\pip\pim\pio$ is constrained to the $\eta$ mass.
+To obtain the X and Y distribution correctly, we use the information after 6C kinematic fit (constraints are 4-momentum
+of $\jpsi$ and masses of $\pio$ and $\eta$) to calculate the X and Y
+values to avoid the problem from mass resolution, which yields 79625 events in total.
 
 Fig.~\ref{fig:etacha_dalXY_datamc} (a) shows the experimental form of the Dalitz diagram
 for the decay $\eta\ra\pip\pim\pio$ in terms of X and Y.
@@ -259,7 +259,7 @@ where the $\epsilon$ represents the efficiency and $|A(X,Y)|^{2}$ is described a
 Eq.~(\ref{eq:etacha_amp}).
 The detection efficiency as a function of X and Y variables $\varepsilon(X,Y)$ is defined as the ratio
 between the number of selected and generated events. The Monte Carlo samples are generated according to
-KLOE's results on the analysis of $\eta \to \pip\pim\pio$.
+KLOE's results on the analysis of $\eta \to \pip\pim\pio$
 and second-order polynomial functions are used to parametrize the efficiency.
 Dalitz plot parameters are obtained by minimization of the
 log-Likelihood function calculated as:
@@ -300,6 +300,49 @@ Fitting to data gives the following values of the parameters:
 \end{eqnarray}
 \end{small}
 where errors are statistical only. 
+The results are illustrated in Fig.~\ref{fig:etacha_dalXY_fit}, where we show the comparison of real data and phase space MC weighted with 
+fitting coefficiencies as a function of X and Y variables. As expected from the charge conjugation symmetry, the fitted
+values of parameter c and e are consistent with zero within 1 $\sigma$\@.
+
+We've also done the fit while fixing the parameter c and e to zero just as other experiments did. And the results are
+almost the same. This fitting yields:
+\begin{table}[!htbp]
+ \begin{center}
+ \begin{small}
+%\caption{\label{tab:datares} The fitting results.}
+ \begin{tabular}{ccccccc}\hline\hline
+  	$\chisq/NDF.$ & a 	&  b  &  $10^{2}$c  & 	d	&	e	& f	 \\\hline
+  	1402/1151 &$ -1.122\pm0.016 $&$ 0.154\pm0.017 $&$ 0(fixed) $&$ 0.085\pm0.016 $&$ 0(fixed) $&$ 0.173\pm0.031$\\
+\hline\hline
+\end{tabular}
+\end{small}
+\end{center}
+\end{table}
+
+\begin{small}
+\begin{eqnarray}
+	\left(\begin{array}{cccc}
+	 1.000 & -0.242 & -0.407 & -0.772 \\
+		   &  1.000 &  0.324 & -0.309 \\
+		   &  	    &  1.000 &  0.104 \\
+		   & 	    &  		 &  1.000
+	 \end{array} \right) \nonumber
+\end{eqnarray}
+\end{small}
+
+\begin{figure}[!htbp]
+	\begin{center}
+		\begin{overpic}[width=0.45\textwidth]{figures/etacha/etacha_dalX_fit.eps}
+			\put(25,58){\bf (a)}
+		\end{overpic}
+		\begin{overpic}[width=0.45\textwidth]{figures/etacha/etacha_dalY_fit.eps}
+			\put(25,58){\bf (b)}
+		\end{overpic}
+	\end{center}
+    \caption{\label{fig:etacha_dalXY_fit} The distributions of the dalitz plot variables X (a) and Y (b), the dots with error bars are data and histograms are fitting functions.}
+\end{figure}
+
+
 %The fit procedure has been verified with MC
 %by checking the input and output values of the Dalitz plot parameters.
 
@@ -496,6 +539,7 @@ The sources of the systematic uncertainties are listed in Table~\ref{tab:etacha_
 \section{SUMMARY}
 Using the large $\jpsi$ sample (1.3 billion $\jpsi$ events) collected with BESIII, we've measured 
 matrix elements for Dalitz plots of decays $\eta\ra\pip\pim\pio$, $\eta\ra\pio\pio\pio$, $\etap\ra\pio\pio\pio$.
+
 For decay $\eta\ra\pip\pim\pio$, the results are:\\
 \begin{small}
 \begin{eqnarray}
@@ -507,7 +551,6 @@ For decay $\eta\ra\pip\pim\pio$, the results are:\\
 	f & = &  0.173 \pm 0.031 \pm 0.036
 \end{eqnarray}
 \end{small}
-
 Table~\ref{tab:etacha_otherexp} shows the experimental values and theoretical values.
 In our fitting results, the c and e are consistent with zero as charge conjugation expected,
 and the other parameters are in reasonable agreement with the previous measurments of other 
@@ -530,6 +573,57 @@ groups and the calculation at next-to-next-to-leading order in Chiral Pertubatio
 \end{center}
 \end{table}
 
+For decay $\eta\ra\pio\pio\pio$, the result is:\\
+\begin{equation}
+	\alpha = -0.055 \pm 0.014 \pm 0.005
+\end{equation}
+and for decay $\etap\ra\pio\pio\pio$, the result is:\\
+\begin{equation}
+	\alpha = -0.687 \pm 0.049 \pm 0.036
+\end{equation}
+Comparison of our results with some other groups' and theoretical calculation is showed in Table~\ref{tab:etaneu_expresults} 
+and Table~\ref{tab:etapneu_expresults}. For decay $\eta\ra\pio\pio\pio$, our result is in agreement with world other experiments
+and the result of decay $\etap\ra\pio\pio\pio$, our result is consistent with the result of GAMS2.
+
+\begin{table}[!htbp]
+\begin{center}
+\begin{small}
+\caption{\label{tab:etaneu_expresults}Theoretical and experimental values of the matrix element for $\eta\to\pio\pio\pio$}
+ \begin{tabular}{cc}\hline\hline
+  	Theory/Exp. & $\alpha$ \\\hline
+  	%ChPT/LO & 0.000\\
+  	ChPT/NLO\cite{Gasser1985539} & 0.015\\
+  	ChPT/NLO + unit.correction\cite{Kambor1996215} & (-0.014)-(-0.007)\\	
+  	UChPT Fit + Bethe Salpeter\cite{alphaChPT3} & $-0.031 \pm 0.003$\\
+  	ChPT/NNLO\cite{chargeChPT} & $0.013 \pm 0.032$\\
+   	KLOE\cite{Ambrosinod:2010mj}  & $-0.0301 \pm 0.0035^{+0.0022}_{-0.0035}$\\
+   	WASA\cite{Adolph:2008vn}  & $-0.027 \pm 0.008 \pm 0.005$\\
+   	CRYB\cite{Prakhov:2008ff}  & $-0.0322 \pm 0.0012 \pm 0.0022$\\
+   	SND\cite{Achasov:2001xi}  & $-0.010 \pm 0.021 \pm 0.010 $\\
+   	CBAR\cite{Abele:1998yi}  & $-0.052 \pm 0.017 \pm 0.010$\\
+   	GAM2\cite{Alde:1984wj}  & $-0.022 \pm 0.023$\\
+   	This work  & $-0.055 \pm 0.014 \pm 0.005$\\
+\hline\hline
+\end{tabular}
+\end{small}
+\end{center}
+\end{table}
+
+\begin{table}[!htbp]
+\begin{center}
+\begin{small}
+\caption{\label{tab:etapneu_expresults}Theoretical and experimental values of the matrix element for $\eta'\to\pio\pio\pio$}
+\begin{tabular}{cc}\hline\hline
+  	Theory/Exp. & $\alpha$ \\\hline
+  	ChPT\cite{Borasoy:2005du} & ($0.1\pm1.7$) to ($-2.7\pm1.0$)\\
+   	GAMS\cite{Blik:2008zz} & $-0.59 \pm 0.18$\\
+   	GAM2\cite{Alde:1987jt} & $-0.1 \pm 0.3$ \\
+   	This work  & $-0.687 \pm 0.049 \pm 0.036$\\
+\hline\hline
+\end{tabular}
+\end{small}
+\end{center}
+\end{table}
 
 \bibliographystyle{unsrt} 
 \bibliography{eta3pi.bib}
